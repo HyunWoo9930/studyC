@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.27)
+project(studyC C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(1 usingArrays.c)
+add_executable(2 fuctionCallswithArrays.c)
+add_executable(3 twoDimensionalArrays.c)
+add_executable(4 ampersandOperator.c)
+add_executable(5 pointer_like_array.c)
+add_executable(6 pointer_scanf_like_array.c)
+add_executable(7 twoSum.c)
