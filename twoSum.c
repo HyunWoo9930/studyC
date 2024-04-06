@@ -4,7 +4,13 @@
 
 void solution(int *num, int size, int target, int *result) {
     for (int i = 0; i < size - 1; i++) {
+        if(num[i] > target) {
+            break;
+        }
         for (int j = 1; j < size; j++) {
+            if(num[j] > target) {
+                break;
+            }
             if (num[i] + num[j] == target) {
                 result[0] = i;
                 result[1] = j;
