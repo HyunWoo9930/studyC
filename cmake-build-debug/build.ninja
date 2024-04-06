@@ -288,6 +288,37 @@ build 8: C_EXECUTABLE_LINKER__8_Debug CMakeFiles/8.dir/structure.c.o
   TARGET_FILE = 8
   TARGET_PDB = 8.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 9
+
+
+#############################################
+# Order-only phony target for 9
+
+build cmake_object_order_depends_target_9: phony || CMakeFiles/9.dir
+
+build CMakeFiles/9.dir/arrow.c.o: C_COMPILER__9_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/arrow.c || cmake_object_order_depends_target_9
+  DEP_FILE = CMakeFiles/9.dir/arrow.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/9.dir
+  OBJECT_FILE_DIR = CMakeFiles/9.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 9
+
+
+#############################################
+# Link the executable 9
+
+build 9: C_EXECUTABLE_LINKER__9_Debug CMakeFiles/9.dir/arrow.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/9.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 9
+  TARGET_PDB = 9.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -322,7 +353,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug
 
-build all: phony 1 2 3 4 5 6 7 8
+build all: phony 1 2 3 4 5 6 7 8 9
 
 # =============================================================================
 # Built-in targets
