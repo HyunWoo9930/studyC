@@ -7,5 +7,6 @@
 /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/7.dir
 /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/8.dir
 /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/9.dir
+/Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/10.dir
 /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
