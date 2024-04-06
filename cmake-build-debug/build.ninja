@@ -350,6 +350,37 @@ build 10: C_EXECUTABLE_LINKER__10_Debug CMakeFiles/10.dir/structureAllocation.c.
   TARGET_FILE = 10
   TARGET_PDB = 10.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 11
+
+
+#############################################
+# Order-only phony target for 11
+
+build cmake_object_order_depends_target_11: phony || CMakeFiles/11.dir
+
+build CMakeFiles/11.dir/denominatorSum.c.o: C_COMPILER__11_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/denominatorSum.c || cmake_object_order_depends_target_11
+  DEP_FILE = CMakeFiles/11.dir/denominatorSum.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/11.dir
+  OBJECT_FILE_DIR = CMakeFiles/11.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 11
+
+
+#############################################
+# Link the executable 11
+
+build 11: C_EXECUTABLE_LINKER__11_Debug CMakeFiles/11.dir/denominatorSum.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/11.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 11
+  TARGET_PDB = 11.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -384,7 +415,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug
 
-build all: phony 1 2 3 4 5 6 7 8 9 10
+build all: phony 1 2 3 4 5 6 7 8 9 10 11
 
 # =============================================================================
 # Built-in targets
