@@ -390,8 +390,8 @@ build 11: C_EXECUTABLE_LINKER__11_Debug CMakeFiles/11.dir/denominatorSum.c.o
 
 build cmake_object_order_depends_target_12: phony || CMakeFiles/12.dir
 
-build CMakeFiles/12.dir/selectionSort.c.o: C_COMPILER__12_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/selectionSort.c || cmake_object_order_depends_target_12
-  DEP_FILE = CMakeFiles/12.dir/selectionSort.c.o.d
+build CMakeFiles/12.dir/stack.c.o: C_COMPILER__12_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/stack.c || cmake_object_order_depends_target_12
+  DEP_FILE = CMakeFiles/12.dir/stack.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/12.dir
   OBJECT_FILE_DIR = CMakeFiles/12.dir
@@ -404,7 +404,7 @@ build CMakeFiles/12.dir/selectionSort.c.o: C_COMPILER__12_unscanned_Debug /Users
 #############################################
 # Link the executable 12
 
-build 12: C_EXECUTABLE_LINKER__12_Debug CMakeFiles/12.dir/selectionSort.c.o
+build 12: C_EXECUTABLE_LINKER__12_Debug CMakeFiles/12.dir/stack.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
   OBJECT_DIR = CMakeFiles/12.dir
   POST_BUILD = :
@@ -421,8 +421,8 @@ build 12: C_EXECUTABLE_LINKER__12_Debug CMakeFiles/12.dir/selectionSort.c.o
 
 build cmake_object_order_depends_target_13: phony || CMakeFiles/13.dir
 
-build CMakeFiles/13.dir/list.c.o: C_COMPILER__13_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/list.c || cmake_object_order_depends_target_13
-  DEP_FILE = CMakeFiles/13.dir/list.c.o.d
+build CMakeFiles/13.dir/list_reverse.c.o: C_COMPILER__13_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/list_reverse.c || cmake_object_order_depends_target_13
+  DEP_FILE = CMakeFiles/13.dir/list_reverse.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/13.dir
   OBJECT_FILE_DIR = CMakeFiles/13.dir
@@ -435,7 +435,7 @@ build CMakeFiles/13.dir/list.c.o: C_COMPILER__13_unscanned_Debug /Users/hyunwoo/
 #############################################
 # Link the executable 13
 
-build 13: C_EXECUTABLE_LINKER__13_Debug CMakeFiles/13.dir/list.c.o
+build 13: C_EXECUTABLE_LINKER__13_Debug CMakeFiles/13.dir/list_reverse.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
   OBJECT_DIR = CMakeFiles/13.dir
   POST_BUILD = :
@@ -505,6 +505,192 @@ build 15: C_EXECUTABLE_LINKER__15_Debug CMakeFiles/15.dir/arrayAndPointer.c.o
   TARGET_FILE = 15
   TARGET_PDB = 15.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 16
+
+
+#############################################
+# Order-only phony target for 16
+
+build cmake_object_order_depends_target_16: phony || CMakeFiles/16.dir
+
+build CMakeFiles/16.dir/queue.c.o: C_COMPILER__16_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/queue.c || cmake_object_order_depends_target_16
+  DEP_FILE = CMakeFiles/16.dir/queue.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/16.dir
+  OBJECT_FILE_DIR = CMakeFiles/16.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 16
+
+
+#############################################
+# Link the executable 16
+
+build 16: C_EXECUTABLE_LINKER__16_Debug CMakeFiles/16.dir/queue.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/16.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 16
+  TARGET_PDB = 16.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 17
+
+
+#############################################
+# Order-only phony target for 17
+
+build cmake_object_order_depends_target_17: phony || CMakeFiles/17.dir
+
+build CMakeFiles/17.dir/list.c.o: C_COMPILER__17_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/list.c || cmake_object_order_depends_target_17
+  DEP_FILE = CMakeFiles/17.dir/list.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/17.dir
+  OBJECT_FILE_DIR = CMakeFiles/17.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 17
+
+
+#############################################
+# Link the executable 17
+
+build 17: C_EXECUTABLE_LINKER__17_Debug CMakeFiles/17.dir/list.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/17.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 17
+  TARGET_PDB = 17.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 18
+
+
+#############################################
+# Order-only phony target for 18
+
+build cmake_object_order_depends_target_18: phony || CMakeFiles/18.dir
+
+build CMakeFiles/18.dir/linkedList.c.o: C_COMPILER__18_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/linkedList.c || cmake_object_order_depends_target_18
+  DEP_FILE = CMakeFiles/18.dir/linkedList.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/18.dir
+  OBJECT_FILE_DIR = CMakeFiles/18.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 18
+
+
+#############################################
+# Link the executable 18
+
+build 18: C_EXECUTABLE_LINKER__18_Debug CMakeFiles/18.dir/linkedList.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/18.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 18
+  TARGET_PDB = 18.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 19
+
+
+#############################################
+# Order-only phony target for 19
+
+build cmake_object_order_depends_target_19: phony || CMakeFiles/19.dir
+
+build CMakeFiles/19.dir/circularLinkedList.c.o: C_COMPILER__19_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/circularLinkedList.c || cmake_object_order_depends_target_19
+  DEP_FILE = CMakeFiles/19.dir/circularLinkedList.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/19.dir
+  OBJECT_FILE_DIR = CMakeFiles/19.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 19
+
+
+#############################################
+# Link the executable 19
+
+build 19: C_EXECUTABLE_LINKER__19_Debug CMakeFiles/19.dir/circularLinkedList.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/19.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 19
+  TARGET_PDB = 19.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 20
+
+
+#############################################
+# Order-only phony target for 20
+
+build cmake_object_order_depends_target_20: phony || CMakeFiles/20.dir
+
+build CMakeFiles/20.dir/test.c.o: C_COMPILER__20_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/test.c || cmake_object_order_depends_target_20
+  DEP_FILE = CMakeFiles/20.dir/test.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/20.dir
+  OBJECT_FILE_DIR = CMakeFiles/20.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 20
+
+
+#############################################
+# Link the executable 20
+
+build 20: C_EXECUTABLE_LINKER__20_Debug CMakeFiles/20.dir/test.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/20.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 20
+  TARGET_PDB = 20.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 21
+
+
+#############################################
+# Order-only phony target for 21
+
+build cmake_object_order_depends_target_21: phony || CMakeFiles/21.dir
+
+build CMakeFiles/21.dir/testw.c.o: C_COMPILER__21_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/testw.c || cmake_object_order_depends_target_21
+  DEP_FILE = CMakeFiles/21.dir/testw.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/21.dir
+  OBJECT_FILE_DIR = CMakeFiles/21.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 21
+
+
+#############################################
+# Link the executable 21
+
+build 21: C_EXECUTABLE_LINKER__21_Debug CMakeFiles/21.dir/testw.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/21.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 21
+  TARGET_PDB = 21.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -539,7 +725,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug
 
-build all: phony 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+build all: phony 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
 
 # =============================================================================
 # Built-in targets
