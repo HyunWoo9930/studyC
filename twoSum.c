@@ -2,7 +2,7 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 
-void solution(int *num, int size, int target, int *result) {
+void solution1(int *num, int size, int target, int *result) {
     for (int i = 0; i < size - 1; i++) {
         if(num[i] > target) {
             break;
@@ -39,7 +39,7 @@ int main() {
     }
 
 
-    solution(num, len, target, result);
+    solution1(num, len, target, result);
     printf("%d %d \n", result[0], result[1]);
 
     return 0;
