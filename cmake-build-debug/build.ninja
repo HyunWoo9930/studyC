@@ -691,6 +691,37 @@ build 21: C_EXECUTABLE_LINKER__21_Debug CMakeFiles/21.dir/testw.c.o
   TARGET_FILE = 21
   TARGET_PDB = 21.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 22
+
+
+#############################################
+# Order-only phony target for 22
+
+build cmake_object_order_depends_target_22: phony || CMakeFiles/22.dir
+
+build CMakeFiles/22.dir/BinaryTreeBranch.c.o: C_COMPILER__22_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/BinaryTreeBranch.c || cmake_object_order_depends_target_22
+  DEP_FILE = CMakeFiles/22.dir/BinaryTreeBranch.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/22.dir
+  OBJECT_FILE_DIR = CMakeFiles/22.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 22
+
+
+#############################################
+# Link the executable 22
+
+build 22: C_EXECUTABLE_LINKER__22_Debug CMakeFiles/22.dir/BinaryTreeBranch.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/22.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 22
+  TARGET_PDB = 22.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -725,7 +756,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug
 
-build all: phony 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+build all: phony 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22
 
 # =============================================================================
 # Built-in targets

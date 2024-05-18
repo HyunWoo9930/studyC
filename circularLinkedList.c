@@ -1,88 +1,107 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 
-typedef enum {
-    false, true
-} bool;
+int arr[200] = {0,};
 
-typedef int Data;
+typedef struct TreeNode {
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+} TreeNode;
 
-typedef struct _Node {
-    Data item;
-    struct _Node *next;
-} Node;
-
-typedef struct {
-    Node *tail;
-    int len;
-} CircularList;
-
-void InsertInitItem(CircularList *plist, Data data) {
-    Node *newNode = (Node *) malloc(sizeof(Node));
-    newNode->next = newNode;
-    newNode->item = data;
-
-    plist->len++;
-    plist->tail = newNode;
-}
-
-void InsertFirst(CircularList *plist, Data data) {
-    Node *cur = plist->tail->next;
-    Node *newNode = (Node *) malloc(sizeof(Node));
-    newNode->item = data;
-    newNode->next = cur;
-    plist->tail->next = newNode;
-    plist->len++;
-}
-
-void InsertLast(CircularList *plist, Data data) {
-    Node *newNode = (Node *) malloc(sizeof(Node));
-    newNode->item = data;
-    newNode->next = plist->tail->next;
-
-    plist->tail->next = newNode;
-    plist->tail = newNode;
-    plist->len++;
-}
-
-void InsertMiddle(CircularList *plist, Data data, int pos) {
-    Node *cur;
-    cur = plist->tail;
-    for (int i = 0; i < pos; i++) {
-        cur = cur->next;
+TreeNode *removeSubtree(TreeNode *root) {
+    if (root == NULL) {
+        return NULL;
     }
-    Node *newNode = (Node *) malloc(sizeof(Node));
-    newNode->item = data;
-    newNode->next = cur->next;
-    cur->next = newNode;
-    plist->len++;
-}
 
-void RemoveInitItem(CircularList *plist) {
-    free(plist->tail);
-    plist->len--;
-    plist->tail = NULL;
-}
+    root->left = removeSubtree(root->left);
+    root->right = removeSubtree(root->right);
 
-void RemoveFirst(CircularList *plist) {
-    plist->tail->next = plist->tail->next->next;
-    free(plist->tail->next);
-    plist->len--;
-}
-
-void RemoveLast(CircularList *plist) {
-    Node *cur = plist->tail;
-    for (int i = 0; i < plist->len -1; i++) {
-        cur = cur->next;
+    if (root->val == 0 && ((root->left == NULL) && root->right == NULL)) {
+        free(root);
+        return NULL;
     }
-    Node *tmp = cur->next;
-    cur->next = tmp->next;
 
-    free(tmp);
-    plist->tail = cur;
-    plist->len--;
+    return root;
+}
+TreeNode *createNode(int val) {
+    TreeNode *newNode = (TreeNode *) malloc(sizeof(TreeNode));
+    newNode->val = val;
+    // 왼쪽과 오른쪽 자식 노드를 초기화하지 않습니다.
+    return newNode;
+}
+
+TreeNode *solution(int size) {
+    if (arr[0] == -1)
+        return NULL;
+
+    TreeNode *queue[size];
+    int front = 0, rear = 0;
+
+    TreeNode *root = createNode(arr[0]);
+    queue[rear++] = root;
+
+    int index = 1;
+    while (index < size) {
+        TreeNode *current = queue[front++];
+
+        if (index < size && arr[index] != -1) {
+            current->left = createNode(arr[index]);
+            queue[rear++] = current->left;
+        }
+        index++;
+
+        if (index < size && arr[index] != -1) {
+            current->right = createNode(arr[index]);
+            queue[rear++] = current->right;
+        }
+        index++;
+    }
+
+    return root;
+}
+
+
+void printNode(TreeNode *node) {
+    if (node == NULL) {
+        printf("-1 ");
+        return;
+    }
+
+    printf("%d ", node->val);
+    if(node->left == NULL && node->right == NULL) {
+        return;
+    }
+    printNode(node->left);
+    printNode(node->right);
 }
 
 int main() {
 
+    // DO NOT MODIFY //
+    int i=0, cnt=0;
+    char str[400] = {0,};
+    char *s;
+    scanf("%[^\n]", str);
+    for (i = 2; i > 1; cnt += i > 0) {
+        i = sscanf(str, "%d%*[ ]%[^\n]", &arr[cnt], str);
+    }
+    // 위 코드를 수행하면 arr 에는 각 원소에 입력으로 받은 노드들이 저장됩니다.
+    ///////////////////
+
+    // print tree as array
+
+    TreeNode *root = (TreeNode *) malloc(sizeof(TreeNode));
+    root->val = arr[0];
+    root->left = NULL;
+    root->right = NULL;
+
+    root = solution(cnt);
+    printNode(root);
+    printf("\n");
+    root = removeSubtree(root);
+    printNode(root);
+
+    return 0;
 }
