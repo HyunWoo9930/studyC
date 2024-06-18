@@ -20,5 +20,8 @@
 /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/20.dir
 /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/21.dir
 /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/22.dir
+/Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/23.dir
+/Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/24.dir
+/Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/25.dir
 /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug/CMakeFiles/rebuild_cache.dir

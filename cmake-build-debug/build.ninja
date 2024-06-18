@@ -722,6 +722,99 @@ build 22: C_EXECUTABLE_LINKER__22_Debug CMakeFiles/22.dir/BinaryTreeBranch.c.o
   TARGET_FILE = 22
   TARGET_PDB = 22.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 23
+
+
+#############################################
+# Order-only phony target for 23
+
+build cmake_object_order_depends_target_23: phony || CMakeFiles/23.dir
+
+build CMakeFiles/23.dir/Heap.c.o: C_COMPILER__23_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/Heap.c || cmake_object_order_depends_target_23
+  DEP_FILE = CMakeFiles/23.dir/Heap.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/23.dir
+  OBJECT_FILE_DIR = CMakeFiles/23.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 23
+
+
+#############################################
+# Link the executable 23
+
+build 23: C_EXECUTABLE_LINKER__23_Debug CMakeFiles/23.dir/Heap.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/23.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 23
+  TARGET_PDB = 23.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 24
+
+
+#############################################
+# Order-only phony target for 24
+
+build cmake_object_order_depends_target_24: phony || CMakeFiles/24.dir
+
+build CMakeFiles/24.dir/BST.c.o: C_COMPILER__24_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/BST.c || cmake_object_order_depends_target_24
+  DEP_FILE = CMakeFiles/24.dir/BST.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/24.dir
+  OBJECT_FILE_DIR = CMakeFiles/24.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 24
+
+
+#############################################
+# Link the executable 24
+
+build 24: C_EXECUTABLE_LINKER__24_Debug CMakeFiles/24.dir/BST.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/24.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 24
+  TARGET_PDB = 24.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 25
+
+
+#############################################
+# Order-only phony target for 25
+
+build cmake_object_order_depends_target_25: phony || CMakeFiles/25.dir
+
+build CMakeFiles/25.dir/HashTable.c.o: C_COMPILER__25_unscanned_Debug /Users/hyunwoo/CLionProjects/studyC/HashTable.c || cmake_object_order_depends_target_25
+  DEP_FILE = CMakeFiles/25.dir/HashTable.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/25.dir
+  OBJECT_FILE_DIR = CMakeFiles/25.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 25
+
+
+#############################################
+# Link the executable 25
+
+build 25: C_EXECUTABLE_LINKER__25_Debug CMakeFiles/25.dir/HashTable.c.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.3
+  OBJECT_DIR = CMakeFiles/25.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 25
+  TARGET_PDB = 25.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -756,7 +849,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/hyunwoo/CLionProjects/studyC/cmake-build-debug
 
-build all: phony 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22
+build all: phony 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 
 # =============================================================================
 # Built-in targets
